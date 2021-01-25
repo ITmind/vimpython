@@ -18,7 +18,14 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o
 "=====================================================
 " Plugins
 "=====================================================
+"установим vim_plug (https://github.com/junegunn/vim-plug)
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
+"установим плагины
 call plug#begin('~/.vim/plugged')
 Plug 'python-mode/python-mode'
 Plug 'scrooloose/nerdtree'
