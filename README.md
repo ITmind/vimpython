@@ -8,4 +8,4 @@
 - запуск кода по кнопке <leader>r
 
 Использование:
-git clone https://ITmind/vimpython && cp ./vimpython/.vimrc ~/.vimrc
+git clone https://github.com/ITmind/vimpython.git && cp ./vimpython/.vimrc ~/.vimrc
